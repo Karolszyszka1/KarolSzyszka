@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <title>CSS podstawy zadanie</title>
+    <link href="style/style.css" rel ="stylesheet" type = "text/css">
+</head>
+<body>
+    <div class="abc"></div>
+    <div class="cba"></div>
+    
+<script>
+    var tab= [];
+    var srednia=8;
+    const tabela=document.querySelector('div.abc');
+    const tabela2=document.querySelector('div.cba');
+    for(let i=0;i<1000;i++){
+        tab[i]=Math.round(Math.random()*50)
+    }
+    tabela.innerHTML=`Tablica: ${tab.join(', ')}`
+    for(let j=0;j<1000;j++){
+        srednia+=tab[j];
+    }
+    srednia=srednia/1000;
+    tabela2.innerHTML=`<br>Średnia: ${srednia}`
+    
+    
+</script>
+</body>
+</html>

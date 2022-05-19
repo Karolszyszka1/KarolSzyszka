@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="imiona"></div>
+    <script>
+    var tab= [];
+    var srednia=8;
+    const tabela=document.querySelector('div.imiona');
+    var imiona = [10];
+    imiona[0] = 'Karol'; imiona[5] = 'Gaweł';
+    imiona[1] = 'Wiktor'; imiona[6] = 'Mikołaj';
+    imiona[2] = 'Kasia'; imiona[7] = 'Maja';
+    imiona[3] = 'Asia'; imiona[8] = 'Szymon';
+    imiona[4] = 'Paweł'; imiona[9] = 'Kamil';
+    imiona.sort();
+    tabela.innerHTML=`<br>Imiona: ${imiona.join(', ')}`
+</script>
+</body>
+</html>
